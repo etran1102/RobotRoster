@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		6F1F5F691F97AF10006E3CA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F5F681F97AF10006E3CA3 /* AppDelegate.swift */; };
-		6F1F5F6B1F97AF10006E3CA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F5F6A1F97AF10006E3CA3 /* ViewController.swift */; };
+		6F1F5F6B1F97AF10006E3CA3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F5F6A1F97AF10006E3CA3 /* MainVC.swift */; };
 		6F1F5F6E1F97AF10006E3CA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1F5F6C1F97AF10006E3CA3 /* Main.storyboard */; };
 		6F1F5F711F97AF10006E3CA3 /* BotsRoster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F5F6F1F97AF10006E3CA3 /* BotsRoster.xcdatamodeld */; };
 		6F1F5F731F97AF10006E3CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1F5F721F97AF10006E3CA3 /* Assets.xcassets */; };
 		6F1F5F761F97AF10006E3CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1F5F741F97AF10006E3CA3 /* LaunchScreen.storyboard */; };
+		6F1F5F7E1F97CA1F006E3CA3 /* SelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F5F7D1F97CA1F006E3CA3 /* SelectVC.swift */; };
+		6F1F5F801F97D62D006E3CA3 /* BotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F5F7F1F97D62D006E3CA3 /* BotCell.swift */; };
+		6F1F5F891F98FC78006E3CA3 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F5F881F98FC78006E3CA3 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6F1F5F651F97AF10006E3CA3 /* BotsRoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotsRoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1F5F681F97AF10006E3CA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F1F5F6A1F97AF10006E3CA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F1F5F6A1F97AF10006E3CA3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		6F1F5F6D1F97AF10006E3CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F1F5F701F97AF10006E3CA3 /* BotsRoster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BotsRoster.xcdatamodel; sourceTree = "<group>"; };
 		6F1F5F721F97AF10006E3CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F1F5F751F97AF10006E3CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F1F5F771F97AF10006E3CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1F5F7D1F97CA1F006E3CA3 /* SelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectVC.swift; sourceTree = "<group>"; };
+		6F1F5F7F1F97D62D006E3CA3 /* BotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BotCell.swift; sourceTree = "<group>"; };
+		6F1F5F881F98FC78006E3CA3 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,10 @@
 		6F1F5F671F97AF10006E3CA3 /* BotsRoster */ = {
 			isa = PBXGroup;
 			children = (
+				6F1F5F831F97D9E3006E3CA3 /* Model */,
+				6F1F5F811F97D9D1006E3CA3 /* View */,
+				6F1F5F821F97D9DC006E3CA3 /* Controller */,
 				6F1F5F681F97AF10006E3CA3 /* AppDelegate.swift */,
-				6F1F5F6A1F97AF10006E3CA3 /* ViewController.swift */,
 				6F1F5F6C1F97AF10006E3CA3 /* Main.storyboard */,
 				6F1F5F721F97AF10006E3CA3 /* Assets.xcassets */,
 				6F1F5F741F97AF10006E3CA3 /* LaunchScreen.storyboard */,
@@ -65,6 +73,31 @@
 				6F1F5F6F1F97AF10006E3CA3 /* BotsRoster.xcdatamodeld */,
 			);
 			path = BotsRoster;
+			sourceTree = "<group>";
+		};
+		6F1F5F811F97D9D1006E3CA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F1F5F7F1F97D62D006E3CA3 /* BotCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6F1F5F821F97D9DC006E3CA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F1F5F7D1F97CA1F006E3CA3 /* SelectVC.swift */,
+				6F1F5F6A1F97AF10006E3CA3 /* MainVC.swift */,
+				6F1F5F881F98FC78006E3CA3 /* DetailVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6F1F5F831F97D9E3006E3CA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F1F5F6B1F97AF10006E3CA3 /* ViewController.swift in Sources */,
+				6F1F5F6B1F97AF10006E3CA3 /* MainVC.swift in Sources */,
 				6F1F5F711F97AF10006E3CA3 /* BotsRoster.xcdatamodeld in Sources */,
+				6F1F5F891F98FC78006E3CA3 /* DetailVC.swift in Sources */,
+				6F1F5F7E1F97CA1F006E3CA3 /* SelectVC.swift in Sources */,
+				6F1F5F801F97D62D006E3CA3 /* BotCell.swift in Sources */,
 				6F1F5F691F97AF10006E3CA3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +344,7 @@
 				6F1F5F7C1F97AF10006E3CA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
